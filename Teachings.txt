@@ -1,0 +1,579 @@
+STAGE 1: HTML FOUNDATIONS (Day 1–2)
+🎯 What HTML Really Is
+
+HTML = HyperText Markup Language
+
+It is NOT programming.
+It is a structure language used to tell the browser:
+
+“This is a heading, this is a paragraph, this is an image…”
+
+🧠 How the Web Works (Simplified)
+
+You write HTML
+
+Browser reads it
+
+Browser renders UI
+
+🧱 Basic Structure of Every HTML Page
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Page</title>
+  </head>
+
+  <body>
+    <h1>Hello World</h1>
+    <p>This is my first page</p>
+  </body>
+</html>
+🔍 Breakdown:
+
+<!DOCTYPE html> → tells browser it's HTML5
+
+<html> → root of page
+
+<head> → settings (not visible)
+
+<body> → visible content
+
+What is an HTML Element?
+
+An HTML element is everything from the opening tag to the closing tag:
+
+<p>This is a paragraph</p>
+
+👉 This whole thing is ONE element.
+
+🧱 Structure of an Element
+<tagname attribute="value">Content</tagname>
+
+Example:
+
+<a href="https://example.com">Visit</a>
+
+<a> → opening tag
+
+href → attribute
+
+Visit → content
+
+</a> → closing tag
+
+🔍 TYPES OF HTML ELEMENTS
+
+There are 3 main types you must understand:
+
+1️⃣ Normal Elements (Container Elements)
+
+They have:
+
+Opening tag
+
+Content
+
+Closing tag
+
+Examples:
+
+<div>Hello</div>
+<p>Text</p>
+<h1>Title</h1>
+2️⃣ Empty Elements (Self-Closing Elements)
+
+These DO NOT have closing tags
+They also DO NOT contain content
+
+⚡ Common Empty Elements
+<br>      <!-- line break -->
+<hr>      <!-- horizontal line -->
+<img>     <!-- image -->
+<input>   <!-- form input -->
+<meta>    <!-- metadata -->
+<link>    <!-- external resources -->
+
+Example:
+
+<img src="image.jpg" alt="photo">
+<br>
+<hr>
+❗ Important Rule:
+
+Empty elements don’t wrap anything
+
+❌ Wrong:
+
+<br>Text</br>
+
+✅ Correct:
+
+<br>
+3️⃣ Nested Elements
+
+Elements inside other elements:
+
+<div>
+  <p>Hello <b>World</b></p>
+</div>
+
+👉 This is how real layouts are built.
+
+📦 BLOCK vs INLINE ELEMENTS (VERY IMPORTANT)
+
+This is one of the most important concepts in HTML.
+
+🟥 BLOCK ELEMENTS
+🔥 Behavior:
+
+Take full width
+
+Start on a new line
+
+Stack vertically
+
+✅ Examples of Block Elements:
+<div></div>
+<p></p>
+<h1></h1> - <h6></h6>
+<section></section>
+<header></header>
+<footer></footer>
+<ul></ul>
+<li></li>
+🧠 Example:
+<p>First</p>
+<p>Second</p>
+
+👉 Output:
+
+First
+Second
+🟦 INLINE ELEMENTS
+🔥 Behavior:
+
+Take only needed width
+
+Stay on the same line
+
+Do NOT break line
+
+✅ Examples of Inline Elements:
+<span></span>
+<a></a>
+<img>
+<b></b>
+<i></i>
+<strong></strong>
+<em></em>
+🧠 Example:
+<span>Hello</span>
+<span>World</span>
+
+👉 Output:
+
+Hello World
+⚖️ BLOCK vs INLINE (Clear Comparison)
+Feature	Block Element	Inline Element
+Width	Full width	Content width
+Line Break	Yes	No
+Layout Use	Structure	Text styling
+Examples	div, p, h1	span, a, b
+
+⚠️ IMPORTANT RULES
+❌ Inline inside Block → ✅ OK
+<p>Hello <span>World</span></p>
+❌ Block inside Inline → 🚫 BAD PRACTICE
+<span><div>Wrong</div></span>
+🧠 COMMON HTML ELEMENTS (Grouped Properly)
+
+I won’t dump random lists — I’ll group them like a real dev.
+
+📄 Document Structure
+<html>
+<head>
+<body>
+<title>
+<meta>
+<link>
+🧱 Layout / Structure
+<div>
+<header>
+<nav>
+main>
+<section>
+article>
+footer>
+🔤 Text Content
+<h1> to <h6>
+<p>
+<span>
+br>
+hr>
+✨ Text Formatting
+<b>: Makes ur text bold.
+<strong>: Is the same as b but has a serious meaning.'
+<i>: Simply makes the text italic.
+<em>: Lays emphasis but still looks like i;
+<mark>: Is Used to mark a portion of ur text or statement.
+<small>: It makes ur text display to be small.
+<del>: It has an importance meaning but doesn't delete on the UI;
+<ins>: It has an important meaning and it reperesents an inserted text;
+🔗 Links & Media
+<a>
+<img>
+<video>
+<audio>
+<iframe>
+📋 Lists
+<ul>
+<ol>
+<li>
+<dl>
+<dt>
+<dd>
+📊 Tables
+<table>
+<tr>
+<th>
+<td>
+<thead>
+<tbody>
+🧾 Forms
+<form>
+<input>
+<textarea>
+<button>
+<select>
+<option>
+<label>
+💻 Computer Code
+<code>
+<pre>
+<kbd>
+<samp>
+🧠 ADVANCED INSIGHT (Senior Dev Tip)
+
+👉 HTML is NOT about memorizing tags
+👉 It’s about understanding:
+
+Structure
+
+Meaning (semantics)
+
+Behavior (block vs inline)
+
+🛠 PRACTICE TASK
+
+Build this:
+
+<div>
+  <h1>My Website</h1>
+  <p>This is <strong>important</strong> text</p>
+  <img src="image.jpg" alt="">
+  <br>
+  <a href="#">Click me</a>
+</div>
+🧠 QUIZ (Answer Before Moving On)
+
+What is an HTML element?
+
+Name 3 empty elements
+
+Difference between block and inline elements
+
+Give 2 examples of each
+
+Why is <img> an empty element?
+
+🔤 Headings
+<h1>Main Title</h1>
+<h2>Sub Title</h2>
+📝 Paragraphs
+<p>This is a paragraph</p>
+💬 Comments (for developers only)
+<!-- This will not show on the page -->
+🛠 EXERCISE 1
+
+Create a page with:
+
+A title: “My First Website”
+
+A heading
+
+Two paragraphs
+
+One comment
+
+🧠 QUIZ 1
+
+Answer these:
+
+What does HTML stand for?
+
+Which tag contains visible content?
+
+What is an attribute?
+
+Write a basic HTML structure
+
+👉 Answer before we move to Stage 2.
+
+🟡 STAGE 2: TEXT, STYLING & CONTENT
+🎯 Goal:
+
+Make content look good and meaningful.
+
+🎨 Inline Styling
+<p style="color: red;">Hello</p>
+✨ Formatting Tags
+<b>Bold</b>
+<i>Italic</i>
+<strong>Important</strong>
+<em>Emphasis</em>
+🗨 Quotations
+<blockquote>This is a quote</blockquote>
+🌈 Colors
+<p style="color: blue;">Text</p>
+🔗 Links
+<a href="https://example.com">Click me</a>
+🖼 Images
+<img src="image.jpg" alt="description">
+😀 Emojis & Entities
+<p>&copy; 2026</p>
+<p>😀</p>
+🛠 EXERCISE 2
+
+Build:
+
+A mini blog post
+
+Include:
+
+title
+
+image
+
+link
+
+formatted text
+
+🧠 QUIZ 2
+
+Difference between <b> and <strong>
+
+What does alt do in images?
+
+How do you create a link?
+
+🟠 STAGE 3: STRUCTURE & LAYOUT
+🎯 Goal:
+
+Think like a real frontend dev.
+
+📦 Block vs Inline
+
+Block → takes full width (div, p)
+
+Inline → takes content width (span, a)
+
+📦 Div
+<div>This is a container</div>
+🆔 Classes & IDs
+<div class="box"></div>
+<div id="header"></div>
+📐 Layout Example
+<header></header>
+<main></main>
+<footer></footer>
+🛠 EXERCISE 3
+
+Create:
+
+Header
+
+Main content
+
+Footer
+
+🧠 QUIZ 3
+
+Block vs Inline?
+
+Difference between class and id?
+
+🔵 STAGE 4: LISTS & TABLES
+📋 Lists
+<ul>
+  <li>Item</li>
+</ul>
+
+<ol>
+  <li>Item</li>
+</ol>
+📊 Tables
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>John</td>
+    <td>20</td>
+  </tr>
+</table>
+🛠 EXERCISE 4
+
+Create a timetable
+
+Create a list menu
+
+🧠 QUIZ 4
+
+Difference between <ul> and <ol>
+
+What is <tr>?
+
+🔴 STAGE 5: NAVIGATION & FILE PATHS
+📁 Paths
+
+Relative → ./about.html
+
+Absolute → full URL
+
+🧭 Multi-page linking
+<a href="about.html">About</a>
+🛠 EXERCISE 5
+
+Create:
+
+Home page
+
+About page
+
+Link them
+
+🧠 QUIZ 5
+
+What is the difference between relative and absolute paths?
+
+⚫ STAGE 6: FORMS (VERY IMPORTANT)
+🧾 Form Example
+<form>
+  <input type="text" placeholder="Name">
+  <input type="email">
+  <button>Submit</button>
+</form>
+🔤 Input Types
+
+text
+
+email
+
+password
+
+checkbox
+
+🛠 EXERCISE 6
+
+Build:
+
+Login form
+
+Signup form
+
+🧠 QUIZ 6
+
+What is <form> used for?
+
+Name 3 input types
+
+🟤 STAGE 7: MEDIA & GRAPHICS
+<video controls src="video.mp4"></video>
+<audio controls src="audio.mp3"></audio>
+🛠 EXERCISE 7
+
+Add:
+
+Video
+
+Audio
+
+🧠 QUIZ 7
+
+Difference between audio and video tags?
+
+🟢 STAGE 8: HTML + APIs (Intro)
+
+Geolocation
+
+Drag & Drop
+
+Local Storage
+
+👉 (We’ll go deeper when you learn JavaScript)
+
+🟣 STAGE 9: SEMANTICS (VERY IMPORTANT)
+
+❌ Bad:
+
+<div></div>
+
+✅ Good:
+
+<header></header>
+<nav></nav>
+<section></section>
+🛠 EXERCISE 9
+
+Convert a page into semantic HTML.
+
+🧠 QUIZ 9
+
+Why is semantic HTML important?
+
+🔵 STAGE 10: SEO & HEAD
+<meta charset="UTF-8">
+<meta name="description" content="My site">
+🧠 QUIZ 10
+
+What is <head> used for?
+
+🟣 STAGE 11: ADVANCED CONCEPTS
+
+HTML vs XHTML
+
+Doctype
+
+Browser rendering
+
+🟠 STAGE 12: FINAL PROJECT
+🛠 Build:
+
+Full website:
+
+Header
+
+Nav
+
+Blog
+
+Form
+
+Footer
+
+🎯 FINAL TEST (VERY IMPORTANT)
+
+Build a website with:
+
+Semantic structure
+
+Navigation
+
+Forms
+
+Images
+
+Lists
+
+Tables
