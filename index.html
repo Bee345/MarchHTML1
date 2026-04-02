@@ -8,6 +8,7 @@
 <body>
     <h1>Welcome</h1>
     <a href="http://google.com" target="_blank" rel="noopener noreferrer">Visit Google</a>
+    <a href="./webbs/" target="_blank" rel="noopener noreferrer">Visit Google</a>
 
 
 
@@ -21,8 +22,104 @@
 
 
 
-    <p style="color: red; font-family: Arial, sans-serif;">Welcome to The land Of <span style="color: blue; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-size: 3rem;">Scoutters</span> </p>
+    <!-- <p style="color: red; font-family: Arial, sans-serif;">Welcome to The land Of <span style="color: blue; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-size: 3rem;">Scoutters</span> </p> -->
 
     <p><b>Lorem</b> <strong>ipsum dolor sit</strong> <i>amet consectetur</i> <em>adipisicing elit</em>. <span>LOOK AT ME NOW</span> <br> <hr> Hic nihil doloribus, assumenda vero totam labore quia expedita qui dolores fugit dignissimos omnis earum, optio voluptas eaque repellat consectetur animi rem ad? Nobis blanditiis minus quo, ipsam cumque quidem sapiente debitis.</p>
+
+    <!-- This below Is where i created Tabels and Lists -->
+     <ul>
+        <li>School</li>
+        <li>Church</li>
+        <li>Mosque</li>
+        <li>Shopping Mall</li>
+     </ul>
+
+     <ol>
+        <caption>How to make Tea</caption>
+        <li>Boil water</li>
+        <li>Add tea leaves</li>
+        <li>Steep for 3-5 minutes</li>
+        <li>Strain and serve</li>
+     </ol>
+
+
+     <table border="1">
+        <thead>
+            <caption>Student Information</caption>
+        <tr>
+            <th colspan="3">Name</th>
+            <th>Age</th>
+            <th>Grade</th>
+        </tr>
+        </thead>
+        <tbody>
+            <tr>
+            <td>Alice</td>
+            <td>Jhonson</td>
+            <td>Clems</td>
+            <td>20</td>
+            <td>A</td>
+        </tr>
+        <tr>
+            <td>Bob</td>
+            <td>Alen</td>
+            <td>Switz</td>
+            <td>22</td>
+            <td>B</td>
+        </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="5">End of Student Information</td>
+            </tr>
+        </tfoot>
+     </table>
+     <!-- Here we are to talk about things to style.  -->
+      <p>We all are ment to be great and if u snooze u loose!!!</p>
+
+      <!-- Below here is all about Form  -->
+        <form action="" method="get" >
+            <label for="fullname">Full_Name:</label>
+            <input type="text" id="fullname" name="fullname" required placeholder="First Name"><br><br>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+    
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required><br><br>
+    
+        <label for="quantity">How many Cartons Do u Need:</label>
+            <input type="number" name="Qty" id="Qty" min="5" max="7000" required>
+
+            <label for="intense">How Intense are u over the Goods</label>
+            <input type="range" name="intense" id="intense" min="1" max="10" required><br>
+
+            <label for="gender">Gender:</label> <br>
+            <input type="radio" name="gender" id="gender" value="male">male<br><br>
+            <input type="radio" name="gender" id="gender" value="female">female<br><br>
+            <input type="radio" name="gender" id="gender" value="others">Others<br><br>
+
+            <label for="country">Choose Ur Origin:</label>
+            <select name="country" id="country">
+                <option value="usa">USA</option>
+                <option value="uk">UK</option>
+                <option value="canada">Canada</option>
+                <option value="australia">Australia</option>
+            </select>
+            <input type="submit" value="Submit">
+            
+        </form>
+
+        <video controls width="450" loop autoplay muted preload="metadata">
+            <source src="./Interviewvideo.mp4" type="video/mp4">
+            <!-- <source src="./Interviewvideo.mp4" type="video/WebM">
+            <source src="./Interviewvideo.mp4" type="video/ogg"> -->
+            Your Browser does not support the video tag
+        </video>
+
+        <audio controls >
+            <source src="./Future-WORST-DAY-(TopGhanaMusic.Com) (1).mp3" type="audio/mpeg">
+            Your Browser does not support the audio tag
+        </audio>
 </body>
 </html>

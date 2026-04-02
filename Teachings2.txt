@@ -1,0 +1,347 @@
+STAGE 1: HTML FOUNDATIONS (DEEP + STRUCTURED)
+🎯 1. WHAT HTML REALLY IS
+🧠 THEORY
+
+HTML is a semantic markup language.
+
+Break that down:
+
+Markup → You mark content with tags
+Semantic → Tags carry meaning, not just appearance
+
+👉 HTML answers:
+
+What is this content?
+Why does it exist?
+How should machines interpret it?
+
+So HTML communicates with:
+
+Browsers (visual display)
+Search engines (ranking)
+Screen readers (accessibility)
+🛠 PRACTICAL
+<h1>Hello</h1>
+
+This means:
+
+Browser → big heading
+Google → important content
+Screen reader → “Heading level 1”
+🧠 2. HOW THE WEB REALLY WORKS
+🧠 THEORY
+
+When you open a webpage:
+
+Browser reads HTML → builds DOM (tree structure)
+Reads CSS → builds CSSOM
+Combines → Render Tree
+Paints pixels on screen
+
+👉 Key Insight:
+
+The browser does NOT “see” your code like you do—it builds a structure.
+
+🛠 PRACTICAL
+
+Your HTML:
+
+<body>
+  <h1>Hello</h1>
+  <p>Text</p>
+</body>
+
+Browser sees:
+
+BODY
+ ├── H1
+ └── P
+
+👉 This is why nesting matters.
+
+🧱 3. HTML DOCUMENT STRUCTURE
+🧠 THEORY
+
+Every HTML page must follow a standard structure so browsers understand it correctly.
+
+Each part has a role:
+
+<!DOCTYPE html> → tells browser version
+<html> → root container
+<head> → metadata (not visible)
+<body> → visible UI
+🛠 PRACTICAL
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Page</title>
+</head>
+
+<body>
+  <h1>Hello World</h1>
+</body>
+</html>
+🧩 4. HTML ELEMENTS
+🧠 THEORY
+
+An HTML element is:
+
+A complete unit of HTML structure
+
+Types:
+
+Opening tag
+Content
+Closing tag
+
+OR
+
+Self-contained (void element)
+🛠 PRACTICAL
+<p>Hello</p>
+
+Breakdown:
+
+<p> → opening
+Hello → content
+</p> → closing
+🔥 5. TYPES OF ELEMENTS
+🧠 THEORY (A) CONTAINER ELEMENTS
+
+These wrap content.
+
+🛠 PRACTICAL
+<div>Hello</div>
+🧠 THEORY (B) VOID ELEMENTS
+No closing tag
+No content inside
+🛠 PRACTICAL
+<img src="image.jpg" alt="photo">
+<br>
+🧠 6. ATTRIBUTES (VERY IMPORTANT)
+🧠 THEORY
+
+Attributes:
+
+Add extra information or behavior to elements
+
+They are written inside opening tags.
+
+🛠 PRACTICAL
+<a href="https://example.com" target="_blank">Visit</a>
+🧩 TYPES OF ATTRIBUTES
+🧠 THEORY (1) GLOBAL ATTRIBUTES
+
+Work on almost every element.
+
+Examples:
+
+id
+class
+title
+style
+🛠 PRACTICAL
+<p id="intro" class="text">Hello</p>
+🧠 THEORY (2) SPECIFIC ATTRIBUTES
+
+Only work on certain elements.
+
+🛠 PRACTICAL
+<img src="pic.jpg" alt="image">
+🧠 THEORY (3) BOOLEAN ATTRIBUTES
+No value needed
+Presence = true
+🛠 PRACTICAL
+<input required>
+<input disabled>
+🧠 THEORY (4) DATA ATTRIBUTES
+
+Custom data for JavaScript.
+
+🛠 PRACTICAL
+<div data-user="123"></div>
+📦 7. BLOCK vs INLINE vs INLINE-BLOCK
+🧠 THEORY
+🟥 BLOCK
+Full width
+New line
+🟦 INLINE
+Content width
+Same line
+🟨 INLINE-BLOCK
+Inline position
+But allows width/height
+🛠 PRACTICAL
+<p>Block 1</p>
+<p>Block 2</p>
+
+<span>Inline 1</span>
+<span>Inline 2</span>
+
+<img src="img.jpg">
+<button>Click</button>
+🧠 8. SEMANTIC HTML
+🧠 THEORY
+
+Semantic HTML:
+
+Using tags that describe meaning, not just layout
+
+🛠 PRACTICAL
+
+❌ Bad:
+
+<div></div>
+
+✅ Good:
+
+<header></header>
+<main></main>
+<footer></footer>
+🧠 WHY IT MATTERS
+SEO ranking
+Accessibility
+Clean code
+🧱 9. SEMANTIC LAYOUT
+🧠 THEORY
+
+Web pages should be structured logically like documents.
+
+🛠 PRACTICAL
+<header>
+  <h1>My Site</h1>
+</header>
+
+<nav>
+  <a href="#">Home</a>
+</nav>
+
+<main>
+  <section>
+    <article>
+      <h2>Post</h2>
+    </article>
+  </section>
+</main>
+
+<footer>
+  <p>Footer</p>
+</footer>
+🔤 10. TEXT FORMATTING
+🧠 THEORY
+
+There are:
+
+Visual tags
+Semantic tags
+🛠 PRACTICAL
+<b>Bold</b>
+<strong>Important</strong>
+
+<i>Italic</i>
+<em>Emphasis</em>
+🧾 11. FORMS
+🧠 THEORY
+
+Forms collect user data and send it to a server.
+
+🛠 PRACTICAL
+<form action="/submit" method="POST">
+  <input type="text" required>
+  <input type="email">
+  <button type="submit">Submit</button>
+</form>
+🧠 IMPORTANT CONCEPTS
+action → destination
+method → how data is sent
+input types → define behavior
+📊 12. TABLES
+🧠 THEORY
+
+Tables display structured data (rows & columns).
+
+🛠 PRACTICAL
+<table>
+  <caption>Students</caption>
+  <thead>
+    <tr><th>Name</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>John</td></tr>
+  </tbody>
+</table>
+🧭 13. FILE PATHS
+🧠 THEORY
+
+Paths tell browser where files are located.
+
+🛠 PRACTICAL
+<a href="./about.html">Relative</a>
+<a href="https://google.com">Absolute</a>
+🧠 14. HEAD TAG
+🧠 THEORY
+
+Contains:
+
+Metadata
+SEO data
+Links to CSS
+🛠 PRACTICAL
+<head>
+  <title>Site</title>
+  <meta name="description" content="Learn HTML">
+</head>
+🔥 15. SEO BASICS
+🧠 THEORY
+
+SEO helps your site appear on search engines.
+
+🛠 PRACTICAL
+<meta name="description" content="Best website">
+<meta name="author" content="You">
+🧠 16. BEST PRACTICES
+🧠 THEORY
+
+Good HTML is:
+
+Clean
+Semantic
+Accessible
+🛠 PRACTICAL (GOOD vs BAD)
+
+❌ Bad:
+
+<div><div><div></div></div></div>
+
+✅ Good:
+
+<header></header>
+<main></main>
+<footer></footer>
+🧪 FINAL PROJECT (REAL THINKING)
+🧠 THEORY
+
+Combine everything:
+
+Structure
+Semantics
+Forms
+Media
+🛠 PRACTICAL TASK
+
+Build a page with:
+
+<header></header>
+<nav></nav>
+<main></main>
+<form></form>
+<table></table>
+<footer></footer>
+🧠 FINAL TEST (ANSWER THIS)
+What is semantic HTML?
+Difference between block and inline?
+What is an attribute?
+Why use <label> in forms?
+What is a void element?
